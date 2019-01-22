@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
+//@ComponentScan(basePackages = "jiang.demo", excludeFilters = {@ComponentScan.Filter(classes = EnableWebMvc.class)})
 @DubboComponentScan(basePackages = "jiang.demo.service")
 public class DubboConfiguration {
 
@@ -21,7 +22,7 @@ public class DubboConfiguration {
     public RegistryConfig registryConfig() {
         RegistryConfig registryConfig = new RegistryConfig();
         registryConfig.setAddress("zookeeper://127.0.0.1:2181");
-        registryConfig.setClient("curator");
+//        registryConfig.setClient("curator");
         return registryConfig;
     }
 }
