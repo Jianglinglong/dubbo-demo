@@ -79,5 +79,11 @@
             <version>${spring.version}</version>
         </dependency>
 
+        <!--dubbo注解驱动支持-->
+        <dependency>
+            <groupId>com.alibaba.spring</groupId>
+            <artifactId>spring-context-support</artifactId>
+            <version>1.0.2</version>
+        </dependency>
     </dependencies>
 </project>
